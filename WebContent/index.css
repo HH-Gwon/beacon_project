@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nanum+Gothic&family=Roboto:wght@100&family=Rowdies:wght@300&display=swap");
+
+body {
+  margin: 0;
+}
+.container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.index-title {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(img/BG01.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.content {
+  display: flex;
+  flex-flow: column;
+  width: 100vw;
+  height: 2000px;
+}
+.content_log {
+  width: 100vw;
+  align-items: center;
+}
+.content_title {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  height: 20vh;
+  line-height: 20vh;
+  font-size: 2em;
+}
+.content_box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.content_text {
+  text-align: center;
+}
+.content_img {
+  margin: 20px;
+}
+
+#blogo {
+  width: 140px;
+}
+
+@media screen and (max-width: 559px) {
+  .content_box {
+    width: 480px;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .content_img {
+    width: 300px;
+    text-align: center;
+  }
+  img {
+    width: 100%;
+  }
+  .content_text {
+    width: 300px;
+    text-align: center;
+  }
+
+  .content_log {
+    width: 480px;
+    margin: 0 auto;
+  }
+  #blogo {
+    width: 80px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .content_box {
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .content_img {
+    width: 480px;
+    text-align: center;
+  }
+  img {
+    width: 80%;
+  }
+  .content_text {
+    width: 480px;
+    text-align: center;
+  }
+  #blogo {
+    width: 110px;
+  }
+@media screen and (min-width: 1024px) {
+  .content_box {
+    width: 2100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-left: 80px;
+  }
+  .content_img {
+    width: 500px;
+  }
+  .content_text {
+    width: 1200px;
+    text-align: center;
+  }
+}
